@@ -6,9 +6,9 @@ describe User do
   let(:login)     { 'skalnik' }
   let(:token)     { 'abcedf123456' }
   let(:auth_hash) {
-                    { 'uid' => uid, 'info' => { 'name' => name, 'nickname' => login },
-                      'credentials' => { 'token' => token } }
-                  }
+    { 'uid' => uid, 'info' => { 'name' => name, 'nickname' => login },
+      'credentials' => { 'token' => token } }
+    }
 
   context "validations" do
     it "is invalid if it has a non-unique uid" do
@@ -28,7 +28,8 @@ describe User do
   describe ".create_from_hash" do
     it "creates a new user with parameters given" do
       User.should_receive(:create).with(:name => name, :uid => uid,
-                                        :github_login => login, :github_token => token)
+                                        :github_login => login,
+                                        :github_token => token)
       User.create_from_hash(auth_hash)
     end
   end
@@ -45,15 +46,17 @@ describe User do
   describe '#atlrug_team_id' do
     it "looks up the Owners team id" do
       user = build(:user)
-      teams = [double(:name => 'ATLRUGers'), double(:name => 'Owners', :id => 1), double(:name => 'Other')]
+      teams = [double(:name => 'ATLRUGers'), double(:name => 'Owners',
+        :id => 1), double(:name => 'Other')]
       octokit = double(:org_teams => teams)
       user.stub(:octokit => octokit)
       user.atlrug_team_id.should == 1
     end
 
-    it "doesn't raise an exception if user doesn't have permission to ATLRUG org" do
+    it "doesn't raise an exception if user has no permission to ATLRUG org" do
       user = build(:user)
-      octokit = double and octokit.stub(:org_teams).and_raise(Octokit::Forbidden)
+      octokit = double and octokit.stub(:org_teams).and_raise(
+        Octokit::Forbidden)
       user.stub(:octokit => octokit)
 
       expect { user.atlrug_team_id }.to_not raise_error
@@ -64,7 +67,8 @@ describe User do
     let(:user) { build(:user, :uid => uid) }
 
     it "is true if the user is in the ATLRUG Owners team" do
-      members = [double(:id => uid + "1"), double(:id => uid), double(:id => uid + "10")]
+      members = [double(:id => uid + "1"), double(:id => uid),
+        double(:id => uid + "10")]
       octokit = double(:team_members => members)
       user.stub(:octokit => octokit)
       user.stub(:atlrug_team_id => 1)
