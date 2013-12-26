@@ -1,2 +1,2 @@
-rvm use 2.1.0-rc1@atlrug3 --create
+rvm use 2.1.0@atlrug3 --create
 
