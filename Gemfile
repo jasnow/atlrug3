@@ -14,6 +14,8 @@ gem 'simple_form'
 
 gem 'unicorn'
 
+gem 'jquery-rails'
+
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
@@ -23,7 +25,10 @@ group :assets do
   gem 'less-rails'
   gem 'twitter-bootstrap-rails'
 end
-gem 'jquery-rails'
+
+group :development do
+  gem 'codesake-dawn', :require => false
+end
 
 group :development, :test do
   gem 'rspec-rails'
