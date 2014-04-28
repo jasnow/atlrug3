@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: 663760e67b80ee25adc293bf5f03debae28b5af9
+  revision: 95de3b0e288aede73d38a18cce30cde66e733558
   specs:
     twitter-bootstrap-rails (2.2.8)
       actionpack (>= 3.1)
@@ -150,7 +150,7 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.5.3)
-    multi_json (1.9.2)
+    multi_json (1.9.3)
     multi_test (0.1.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -219,7 +219,7 @@ GEM
     ref (1.0.5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rspec-collection_matchers (0.0.3)
+    rspec-collection_matchers (0.0.4)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.0.0.beta1)
       rspec-support (= 3.0.0.beta1)
@@ -240,7 +240,7 @@ GEM
     rspec-support (3.0.0.beta1)
     ruby_parser (3.6.0)
       sexp_processor (~> 4.1)
-    sass (3.3.5)
+    sass (3.3.6)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
