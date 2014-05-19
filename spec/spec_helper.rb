@@ -13,7 +13,8 @@ RSpec.configure do |config|
   config.infer_base_class_for_anonymous_controllers = false
   config.include FactoryGirl::Syntax::Methods
 
-  config.mock_with :rspec do |c|
-    c.yield_receiver_to_any_instance_implementation_blocks = true
-  end
+#RSPEC 3.0
+#  config.mock_with :rspec do |c|
+#    c.yield_receiver_to_any_instance_implementation_blocks = true
+#  end
 end
