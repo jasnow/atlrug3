@@ -307,7 +307,7 @@ DEPENDENCIES
   pg
   pry
   rails (= 3.2.19)
-  rspec-rails (= 2.99.0)
+  rspec-rails
   sass-rails
   simple_form
   slim
