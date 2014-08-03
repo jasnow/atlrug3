@@ -9,12 +9,13 @@ When /^I submit a talk named "([^\"]*)" with length of (\d+) minutes$/ do |title
 end
 
 Then /^I should see the talk was submitted successfully$/ do
-  page.body.should match /submitted for review/
+  expect(page.body).to match /submitted for review/
 end
 
 Given /^I\'m logged in as an admin$/ do
   user = FactoryGirl.create(:user)
-  User.any_instance.stub(:atlrug_organizer? => true) and user.stub(:atlrug_team_id => 1)
+  allow_any_instance_of(User).to receive_messages(:atlrug_organizer? => true) and
+    allow(user).to receive_messages(:atlrug_team_id => 1)
   OmniAuth.config.add_mock(:github, { :uid  => user.uid })
   visit "/auth/github/"
 end
@@ -30,5 +31,5 @@ When /^I go approve a talk$/ do
 end
 
 Then /^I should see it scheduled for the next meetup$/ do
-  page.body.should match /scheduled for next meetup/
+  expect(page.body).to match /scheduled for next meetup/
 end

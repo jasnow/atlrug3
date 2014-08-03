@@ -49,7 +49,7 @@ describe User, :type => :model do
       teams = [double(:name => 'ATLRUGers'), double(:name => 'Owners',
         :id => 1), double(:name => 'Other')]
       octokit = double(:org_teams => teams)
-      user.stub(:octokit => octokit)
+      allow(user).to receive_messages(:octokit => octokit)
       expect(user.atlrug_team_id).to eq(1)
     end
 
@@ -57,7 +57,7 @@ describe User, :type => :model do
       user = build(:user)
       octokit = double and allow(octokit).to receive(:org_teams).and_raise(
         Octokit::Forbidden)
-      user.stub(:octokit => octokit)
+      allow(user).to receive_messages(:octokit => octokit)
 
       expect { user.atlrug_team_id }.to_not raise_error
     end
@@ -70,8 +70,8 @@ describe User, :type => :model do
       members = [double(:id => uid + "1"), double(:id => uid),
         double(:id => uid + "10")]
       octokit = double(:team_members => members)
-      user.stub(:octokit => octokit)
-      user.stub(:atlrug_team_id => 1)
+      allow(user).to receive_messages(:octokit => octokit)
+      allow(user).to receive_messages(:atlrug_team_id => 1)
 
       expect(user.atlrug_organizer?).to be_truthy
     end
@@ -79,7 +79,7 @@ describe User, :type => :model do
     it "is false if the user is not in the ATLRUG Owners team" do
       members = [double(:id => uid + "1"), double(:id => uid + "10")]
       octokit = double(:team_members => members)
-      user.stub(:octokit => octokit)
+      allow(user).to receive_messages(:octokit => octokit)
       allow(user).to receive(:atlrug_team_id)
 
       expect(user.atlrug_organizer?).to be_falsey
