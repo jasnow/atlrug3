@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  attr_accessible :name, :uid, :github_login, :github_token
+
   validates :uid, :uniqueness => true
 
   def atlrug_organizer?
