@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
-
 gem 'rails', '3.2.19'
 gem 'pg'
 gem 'slim'
@@ -28,7 +26,7 @@ group :assets do
 end
 
 group :development do
-  gem 'codesake-dawn', :require => false
+  gem 'dawn', :require => false
 end
 
 group :development, :test do
