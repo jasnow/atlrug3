@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: 3edf24de985d946f16a2781644289cfdc51ba95b
+  revision: 67f160dd2ff5cc7cd843a17866c3b6bc8e7f2794
   specs:
     twitter-bootstrap-rails (3.2.0)
       actionpack (>= 3.1)
@@ -182,7 +182,7 @@ GEM
       rspec-mocks (~> 3.1.0)
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
-    sass (3.4.7)
+    sass (3.4.8)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
