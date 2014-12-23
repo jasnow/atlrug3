@@ -35,7 +35,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'cucumber', '2.0.0.beta.3'
+  gem 'cucumber', '2.0.0.beta.5'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'factory_girl_rails'
