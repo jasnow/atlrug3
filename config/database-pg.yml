@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  database: atlrug_development
+  min_messages: WARNING
+
+test: &test
+  adapter: postgresql
+  database: atlrug_test
+  min_messages: WARNING
+
+production:
+  adapter: postgresql
+  database: atlrug_production
+  min_messages: WARNING
+
+cucumber:
+  <<: *test

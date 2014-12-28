@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.21'
-gem 'pg'
+
 gem 'slim'
 gem 'omniauth'
 gem 'omniauth-github'
@@ -32,6 +32,11 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'pry'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end
 
 group :test do

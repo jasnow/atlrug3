@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: 67f160dd2ff5cc7cd843a17866c3b6bc8e7f2794
+  revision: b701e23e91bd2726af5bc669b87f7f34efc96ab1
   specs:
     twitter-bootstrap-rails (3.2.0)
       actionpack (>= 3.1)
@@ -202,6 +202,7 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sqlite3 (1.3.10)
     temple (0.7.4)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
@@ -245,6 +246,7 @@ DEPENDENCIES
   sass-rails
   simple_form
   slim
+  sqlite3
   therubyracer
   twitter-bootstrap-rails!
   uglifier
