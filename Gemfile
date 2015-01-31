@@ -26,7 +26,7 @@ group :assets do
 end
 
 group :development do
-  gem 'dawn', :require => false
+  gem 'dawnscanner', :require => false
 end
 
 group :development, :test do
@@ -40,7 +40,7 @@ group :production do
 end
 
 group :test do
-  gem 'cucumber', '2.0.0.beta.5'
+  gem 'cucumber', '2.0.0.rc.3'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'factory_girl_rails'
