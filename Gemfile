@@ -40,7 +40,7 @@ group :production do
 end
 
 group :test do
-  gem 'cucumber', '2.0.0.rc.3'
+  gem 'cucumber', '2.0.0.rc.4'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'factory_girl_rails'
