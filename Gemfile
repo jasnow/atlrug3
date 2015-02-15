@@ -33,6 +33,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry'
   gem 'sqlite3'
+  gem 'test-unit'
 end
 
 group :production do
