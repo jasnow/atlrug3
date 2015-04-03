@@ -62,7 +62,7 @@ GEM
       execjs
     coffee-script-source (1.9.1)
     commonjs (0.2.7)
-    coveralls (0.7.12)
+    coveralls (0.8.0)
       multi_json (~> 1.10)
       rest-client (>= 1.6.8, < 2)
       simplecov (~> 0.9.1)
