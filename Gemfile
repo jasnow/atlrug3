@@ -18,7 +18,7 @@ group :assets do
 
   gem "therubyracer"
   gem 'less-rails'
-  gem "twitter-bootstrap-rails"
+  gem 'twitter-bootstrap-rails', '3.2.1.rc1'
 end
 
 group :development do
