@@ -10,19 +10,20 @@ gem 'high_voltage'
 gem 'simple_form'
 gem 'unicorn'
 gem 'jquery-rails'
+gem 'overcommit'
 
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
 
-  gem "therubyracer"
+  gem 'therubyracer'
   gem 'less-rails'
   gem 'twitter-bootstrap-rails', '3.2.1.rc1'
 end
 
 group :development do
-  gem 'dawnscanner', :require => false
+  gem 'dawnscanner', require: false
 end
 
 group :development, :test do
@@ -34,7 +35,7 @@ end
 
 group :test do
   gem 'cucumber'
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'factory_girl_rails'
 end
