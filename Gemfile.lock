@@ -120,7 +120,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.2)
     justify (1.0.2)
-    jwt (1.4.1)
+    jwt (1.5.0)
     kgio (2.9.3)
     less (2.6.0)
       commonjs (~> 0.2.7)
@@ -279,9 +279,10 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    twitter-bootstrap-rails (2.2.8)
+    twitter-bootstrap-rails (3.2.1.rc1)
       actionpack (>= 3.1)
-      execjs
+      execjs (>= 2.2.2, >= 2.2)
+      less-rails (>= 2.5.0)
       rails (>= 3.1)
       railties (>= 3.1)
     tzinfo (0.3.44)
@@ -326,6 +327,6 @@ DEPENDENCIES
   sqlite3
   test-unit
   therubyracer
-  twitter-bootstrap-rails
+  twitter-bootstrap-rails (= 3.2.1.rc1)
   uglifier
   unicorn
