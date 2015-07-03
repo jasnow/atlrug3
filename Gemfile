@@ -11,7 +11,6 @@ gem 'simple_form'
 gem 'unicorn'
 gem 'jquery-rails'
 gem 'overcommit'
-gem 'libv8', '3.16.14.8' # LOCKED DOWN - temp. fix.
 
 group :assets do
   gem 'sass-rails'
