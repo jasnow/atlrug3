@@ -86,7 +86,7 @@ GEM
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
-    execjs (2.5.2)
+    execjs (2.6.0)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.5.0)
@@ -101,7 +101,7 @@ GEM
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
       posix-spawn (~> 0.3.6)
-    haml (4.0.6)
+    haml (4.0.7)
       tilt
     hashie (3.4.2)
     high_voltage (2.4.0)
@@ -259,7 +259,7 @@ GEM
       ref
     thor (0.19.1)
     tilt (1.4.1)
-    tins (1.5.4)
+    tins (1.6.0)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
