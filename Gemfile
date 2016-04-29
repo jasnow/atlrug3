@@ -5,6 +5,7 @@ gem 'rails', '3.2.22.2'
 gem 'slim'
 gem 'omniauth'
 gem 'omniauth-github'
+gem 'hashie', '3.4.3' # LOCKED DOWN (4/29/2016: 3.4.4 brokes build)
 gem 'octokit'
 gem 'high_voltage'
 gem 'simple_form'
