@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
   end
 
   def failure
-    render :text => params.inspect
+    render :text => "Your paramseters were wrong" # params.inspect
   end
 
   protected
