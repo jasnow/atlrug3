@@ -143,7 +143,7 @@ GEM
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
     fastercsv (1.5.5)
-    ffi (1.9.17)
+    ffi (1.9.18)
     gherkin (4.0.0)
     haml (4.0.7)
       tilt
