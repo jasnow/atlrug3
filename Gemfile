@@ -35,7 +35,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'cucumber', '3.0.0.pre.2' # LOCKDED DOWN
+  gem 'cucumber'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'factory_girl_rails'
