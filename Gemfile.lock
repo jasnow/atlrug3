@@ -54,6 +54,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     commonjs (0.2.7)
+    concurrent-ruby (1.0.5)
     cucumber (3.0.1)
       builder (>= 2.1.2)
       cucumber-core (~> 3.0.0)
@@ -157,7 +158,8 @@ GEM
     hashie (3.5.6)
     high_voltage (3.0.0)
     hike (1.2.3)
-    i18n (0.8.6)
+    i18n (0.9.0)
+      concurrent-ruby (~> 1.0)
     iniparse (1.4.4)
     journey (1.0.4)
     jquery-rails (3.1.4)
