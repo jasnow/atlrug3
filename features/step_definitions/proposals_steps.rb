@@ -13,7 +13,7 @@ Then /^I should see the talk was submitted successfully$/ do
 end
 
 Given /^I\'m logged in as an admin$/ do
-  user = FactoryGirl.create(:user)
+  user = FactoryBot.create(:user)
   allow_any_instance_of(User).to receive_messages(:atlrug_organizer? => true) and
     allow(user).to receive_messages(:atlrug_team_id => 1)
   OmniAuth.config.add_mock(:github, { :uid  => user.uid })
@@ -21,11 +21,11 @@ Given /^I\'m logged in as an admin$/ do
 end
 
 Given /^a talk has been submitted$/ do
-  FactoryGirl.create(:talk)
+  FactoryBot.create(:talk)
 end
 
 When /^I go approve a talk$/ do
-  pending    
+  pending
   #visit "/talks/approve"
   #click_link "approve"
 end
