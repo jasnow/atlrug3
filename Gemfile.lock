@@ -298,7 +298,7 @@ GEM
     temple (0.8.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    test-unit (3.2.6)
+    test-unit (3.2.7)
       power_assert
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
