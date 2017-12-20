@@ -155,7 +155,7 @@ GEM
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-    hashie (3.5.6)
+    hashie (3.5.7)
     high_voltage (3.0.0)
     hike (1.2.3)
     i18n (0.9.1)
