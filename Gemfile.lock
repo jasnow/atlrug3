@@ -169,7 +169,7 @@ GEM
     json_pure (1.8.6)
     justify (1.0.2)
     jwt (1.5.6)
-    kgio (2.11.1)
+    kgio (2.11.2)
     less (2.6.0)
       commonjs (~> 0.2.7)
     less-rails (2.6.0)
