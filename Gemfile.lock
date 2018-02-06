@@ -150,7 +150,7 @@ GEM
     faraday (0.12.2)
       multipart-post (>= 1.2, < 3)
     fastercsv (1.5.5)
-    ffi (1.9.18)
+    ffi (1.9.21)
     gherkin (5.0.0)
     haml (5.0.4)
       temple (>= 0.8.0)
