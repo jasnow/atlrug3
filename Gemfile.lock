@@ -242,7 +242,7 @@ GEM
       thor (>= 0.14.6, < 2.0)
     raindrops (0.19.0)
     rake (12.3.0)
-    rb-fsevent (0.10.2)
+    rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (3.12.2)
