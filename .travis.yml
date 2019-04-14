@@ -10,7 +10,6 @@ notifications:
     - jasnow@hotmail.com
     on_success: change
     on_failure: always
-sudo: false
 env:
   global:
     secure: B8FZxLnQch9p3qy0opz0AsQlfcEw6na66L1175jt10Ta8tUfRQNDDZnu2wiGSIj21ir+84WjrUIiAOT3DaB31xLArd4m07nNNj9tXq/gwl1kMNrYYffL+EvKH3V/j2PADElqoQiFWNDKxEzN4Y6P6vSD8gGdpsyHATc6isx2rOk=
