@@ -57,5 +57,7 @@ module ATLRUG
     config.assets.version = '1.0'
 
     I18n.config.enforce_available_locales = false
+
+    config.generators.javascript_engine = :js
   end
 end
