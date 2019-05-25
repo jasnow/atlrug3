@@ -91,7 +91,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.11.1)
     gherkin (5.1.0)
-    haml (5.1.0)
+    haml (5.1.1)
       temple (>= 0.8.0)
       tilt
     hashie (3.6.0)
