@@ -11,7 +11,6 @@ gem 'high_voltage'
 gem 'simple_form'
 gem 'unicorn'
 gem 'jquery-rails'
-gem 'overcommit'
 
 group :assets do
   gem 'sass-rails'
