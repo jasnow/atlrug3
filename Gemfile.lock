@@ -87,7 +87,7 @@ GEM
       railties (>= 3.0.0)
     faraday (0.17.0)
       multipart-post (>= 1.2, < 3)
-    ffi (1.11.2)
+    ffi (1.11.3)
     gherkin (5.1.0)
     haml (5.1.2)
       temple (>= 0.8.0)
